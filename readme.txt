@@ -15,7 +15,7 @@ This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugin
 
 Once activated, EDD Checkout Wizard will add a form wizard to your checkout page with some features:
 
-1. Form validation: Customer can only continue if completes correctly the form
+1. Customer can only pass to the next tab if the form is correctly completed
 1. Forces to scroll to the bottom of the screen to click the next button
 1. Possibility to navigate to previously validated tabs
 1. Checks changes from payment method selection
@@ -28,10 +28,12 @@ Current tabs distribution:
 1. Billing Address: Displays billing address information and EU VAT information (if EDD VAT is active)
 1. Payment: Last tab with cart total and purchase button
 
-EDD Checkout Wizard has support for this plugins:
+EDD Checkout Wizard has support for this third-party plugins:
 
 1. EDD Recommended Products
 1. EDD VAT
+
+If you want support for any plugin you can send to me an email at rubengcdev@gmail.com.
 
 There's a [GIT repository](https://github.com/rubengc/edd-checkout-wizard) too if you want to contribute a patch.
 
@@ -92,9 +94,9 @@ Note: Elements that are not in a tab will be kept always visible
 
 == Screenshots ==
 
-1. Screenshot from frontend (Theme: vendd)
+1. Screenshot from checkout (Theme: vendd)
 
-2. Screenshot from EDD settings page
+1. Screenshot of form notifications (Theme: vendd)
 
 == Upgrade Notice ==
 

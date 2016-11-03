@@ -40,3 +40,9 @@
 .edd-checkout-wizard-button[aria-hidden="true"] {
     display: none;
 }
+
+@media (max-width: 599px) {
+    .edd-checkout-wizard-nav-tab:not(.nav-tab-active) {
+        display: none;
+    }
+}
