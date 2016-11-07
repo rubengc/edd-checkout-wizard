@@ -3,7 +3,7 @@
  * Plugin Name:     EDD Checkout Wizard
  * Plugin URI:      https://wordpress.org/plugins/edd-checkout-wizard/
  * Description:     Adds a form wizard with validation to your checkout page
- * Version:         1.0.0
+ * Version:         1.0.1
  * Author:          rubengc
  * Author URI:      http://rubengc.com
  * Text Domain:     edd-checkout-wizard
@@ -155,6 +155,10 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
         }
 
         public function render_html_tabs() {
+            if( isset($_POST['action']) && $_POST['action'] == 'edd_recalculate_taxes' ) {
+                return;
+            }
+
             $tabs = array(
                 'overview' => array(
                     'label' => __( 'Overview' ),

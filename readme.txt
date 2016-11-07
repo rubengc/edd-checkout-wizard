@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: easy digital downloads, digital, download, downloads, edd, rubengc, checkout, wizard, step, form, validation, validate, e-commerce
 Requires at least: 4.0
 Tested up to: 4.6.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,6 +101,9 @@ Note: Elements that are not in a tab will be kept always visible
 == Upgrade Notice ==
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed: Prevent duplicated HTML tabs When EDD recalculates taxes
 
 = 1.0 =
 * Initial release

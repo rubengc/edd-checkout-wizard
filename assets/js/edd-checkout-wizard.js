@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 
     edd_checkout_wizard_tabs_toggle();
 
-    $('body').on('edd_gateway_loaded', function() {
+    $('body').on('edd_gateway_loaded edd_taxes_recalculated', function() {
         edd_checkout_wizard_tabs_toggle();
     });
 
