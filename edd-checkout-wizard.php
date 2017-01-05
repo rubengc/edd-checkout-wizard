@@ -3,7 +3,7 @@
  * Plugin Name:     EDD Checkout Wizard
  * Plugin URI:      https://wordpress.org/plugins/edd-checkout-wizard/
  * Description:     Adds a form wizard with validation to your checkout page
- * Version:         1.0.1
+ * Version:         1.0.2
  * Author:          rubengc
  * Author URI:      http://rubengc.com
  * Text Domain:     edd-checkout-wizard
@@ -172,6 +172,7 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
                     'selectors' => array(
                         '.edd-payment-icons',
                         '#edd_payment_mode_select',
+                        '#edd_cc_fields',
                     )
                 ),
                 'account' => array(
@@ -196,7 +197,7 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
                 ),
             );
 
-            if( ! edd_show_gateways() ) {
+            if( edd_get_cart_total() <= 0 ) {
                 unset($tabs['payment_method']);
             }
 
